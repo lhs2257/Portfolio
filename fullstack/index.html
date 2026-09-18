@@ -308,6 +308,22 @@
     .gal-slide img{max-height:210px;}
     .gal-slide figcaption{font-size:11.5px;margin-top:8px;}
   }
+  /* 보조 프로젝트의 제목·설명·기술 및 기간을 각각 정렬한다. */
+  #more .m{display:grid;grid-template-columns:minmax(170px,0.8fr) minmax(0,1.4fr) max-content;gap:8px 18px;align-items:start;}
+  #more .m b,#more .m span{min-width:0;overflow-wrap:break-word;}
+  #more .m i{margin-left:0;white-space:nowrap;text-align:right;}
+  @media (max-width:979px){
+    #more .m{grid-template-columns:minmax(0,1fr) max-content;}
+    #more .m b{grid-column:1;grid-row:1;}
+    #more .m i{grid-column:2;grid-row:1;}
+    #more .m span{grid-column:1 / -1;grid-row:2;}
+  }
+  @media (max-width:599px){
+    #more .m{grid-template-columns:minmax(0,1fr);}
+    #more .m b{grid-column:1;grid-row:1;}
+    #more .m i{grid-column:1;grid-row:2;text-align:left;}
+    #more .m span{grid-column:1;grid-row:3;}
+  }
 </style>
 </head>
 <body>
