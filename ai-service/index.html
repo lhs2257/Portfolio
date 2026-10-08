@@ -235,6 +235,9 @@
   }
   .abil-card h4{margin:0 0 15px;font-size:21px;font-weight:750;letter-spacing:-0.4px;line-height:1.45;}
   .abil-card p{margin:0;font-size:15.5px;line-height:1.85;color:var(--ink-soft);}
+  #ability h2,#ability .abil-card h4,#ability .abil-card p{
+    word-break:keep-all;overflow-wrap:normal;
+  }
   @media (max-width:640px){
     .abil-card{padding:26px 24px;}
     .abil-card h4{font-size:18.5px;}
@@ -584,18 +587,18 @@
       <div class="gal-view"><div class="gal-track">
         <div class="gal-slide abil-card">
           <div class="n">01 / 03</div>
-          <h4>도메인 지침을 반영한 AI 기능 구현</h4>
-          <p>공공기관 채용 지침 10종을 Gemini Flash API와 연계해 자기소개서의 검토 영역을 탐지했습니다. 업무 기준을 AI 기능으로 구현하고 사용자의 최종 검토 과정까지 연결할 수 있습니다.</p>
+          <h4>AI 도구를 활용한 제품 구현</h4>
+          <p>Claude Code와 Codex를 활용해 화면, API와 서버 로직을 구현하고 오류를 수정해 왔습니다. 기획부터 개발·테스트·배포까지 제품 개발의 전체 과정을 수행할 수 있습니다.</p>
         </div>
         <div class="gal-slide abil-card">
           <div class="n">02 / 03</div>
-          <h4>AI 분석 결과의 서비스 적용</h4>
-          <p>견적 분석 기능에서 AI의 기간·난도 판단과 서버의 금액 계산을 분리했습니다. AI 분석 결과에 계산·검증 로직을 연결해 서비스에서 사용하는 구조를 구현할 수 있습니다.</p>
+          <h4>AI 분석과 서비스 로직 연결</h4>
+          <p>Gemini와 OpenAI API의 분석 결과를 화면, 데이터 처리와 서버 로직에 연결해 왔습니다. AI가 판단할 영역과 정확한 계산·검증이 필요한 영역을 구분해 기능을 설계할 수 있습니다.</p>
         </div>
         <div class="gal-slide abil-card">
           <div class="n">03 / 03</div>
-          <h4>이미지 분석 기능 연동과 실패 대응</h4>
-          <p>명함 서비스에서 이미지 분석 모델을 연동하고, 전처리 오류에 대응했습니다. 입력 이미지 처리와 모델 호출을 연결하고, 자동 처리 실패 시 사용할 대체 경로를 구현할 수 있습니다.</p>
+          <h4>실제 사용 환경을 고려한 검증</h4>
+          <p>단계별 로그와 반복 테스트로 오류 원인을 확인하고, 자동 처리가 실패할 때 사용할 대체 경로를 구현해 왔습니다. 기능 구현 이후에도 실제 동작을 검증하고 개선할 수 있습니다.</p>
         </div>
       </div></div>
       <div class="gal-ctrl">
