@@ -158,7 +158,13 @@
   .proj-split{display:block;}
   @media (min-width:980px){
     .proj-split{display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);min-height:558px;}
-    .proj-split > .gal{border-bottom:0;border-right:1px solid var(--line-soft);}
+    .proj-split > .gal{
+      display:flex;flex-direction:column;justify-content:center;
+      border-bottom:0;border-right:1px solid var(--line-soft);
+    }
+    .proj-split > .proj-body{
+      display:flex;flex-direction:column;justify-content:space-evenly;
+    }
   }
 
   /* ---------- carousel ---------- */
