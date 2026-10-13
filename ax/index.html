@@ -402,11 +402,11 @@
   <div class="wrap wide">
     <div class="rise stag">SELECTED WORK</div>
     <h2>핵심 프로젝트
-      <span class="sub">콘텐츠 제작, 채용 서류 검토, 근태 관리에서 실제로 사용한 세 프로젝트입니다.</span>
+      <span class="sub">채용 서류 검토, 근태 관리, 콘텐츠 제작에서 실제로 사용한 세 프로젝트입니다.</span>
     </h2>
 
     <div class="projbar">
-      <div class="tabs" id="tabs" aria-label="프로젝트 선택"><button aria-selected="true">콘텐츠 자동화</button><button aria-selected="false">채용 서류 AI 검토</button><button aria-selected="false">사내 근태 관리</button></div>
+      <div class="tabs" id="tabs" aria-label="프로젝트 선택"><button aria-selected="true">채용 서류 AI 검토</button><button aria-selected="false">사내 근태 관리</button><button aria-selected="false">콘텐츠 자동화</button></div>
       <div class="ctrl">
         <button id="prev" aria-label="이전 프로젝트">←</button>
         <button id="next" aria-label="다음 프로젝트">→</button>
@@ -418,20 +418,6 @@
     <div class="carousel" id="carousel">
       <div class="track" id="track">
         <article class="rise proj">
-      <div class="proj-head">
-        <div class="proj-top">
-          <span class="badge">개인 업무 자동화</span>
-          <h3>콘텐츠 수집·AI 대본 생성 자동화 도구 개발</h3>
-          <span class="period">2026.04 ~ 2026.05</span>
-        </div>
-        <p>콘텐츠 채널 운영에서 반복하던 소재 탐색과 대본 작성을 줄이기 위해 개발한 도구입니다. 소재 수집부터 AI 번역·대본 생성·업로드 예약까지 연결해 실제 채널 운영에 사용했습니다.</p>
-      </div>
-      <div class="proj-split"><div class="workflow" aria-label="콘텐츠 자동화 처리 흐름">
-<div class="workflow-label">구현한 처리 흐름</div>
-<ol><li><b>자료 수집</b><span>뉴스·유튜브·검색 트렌드</span></li><li><b>AI 번역</b><span>여러 건을 묶어 요청</span></li><li><b>대본 생성</b><span>수집한 자료를 LLM에 제공</span></li><li><b>업로드 예약</b><span>채널 운영에 활용</span></li></ol>
-<p class="fallback-note">번역 실패 시 원문을 제공해 소재 확인을 이어갑니다.</p>
-</div><div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v">콘텐츠 채널 운영에서 반복되는 작업을 파악하고, 자료 수집부터 번역·대본 생성·업로드 예약까지 단독으로 설계·개발했습니다.</div></div><div class="row"><div class="k">기술 스택</div><div class="v"><div class="stack"><span>Python</span><span>LLM API</span><span>외부 API 연동</span></div></div></div><div class="row"><div class="k">문제 해결</div><div class="v">뉴스·유튜브·검색 트렌드 등 여러 출처의 자료를 수집해 번역과 대본 생성에 연결했습니다. 번역 요청은 여러 건을 묶어 처리하고, 실패하면 원문을 제공해 소재 확인을 이어가도록 했습니다.</div></div><div class="row"><div class="k">결과</div><div class="v"><p>도구를 실제 채널 운영에 사용했으며, 소재 탐색과 대본 작성에 들던 시간을 약 3시간에서 약 30분으로 줄였습니다.</p><p class="project-note">당시 본인의 실제 작업 경험에 따른 대략적인 소요 시간입니다.</p></div></div></div></div></article>
-<article class="rise proj">
       <div class="proj-head">
         <div class="proj-top">
           <span class="badge">외주 납품 · 5인 팀 프로젝트</span>
@@ -480,6 +466,20 @@
         </div>
       </div>
       <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v">출퇴근·연차 관리 화면과 데이터 처리를 구현했습니다. 근태 판정 로직, 기존 기록을 정정하는 SQL과 검증 쿼리 작성을 맡았습니다.</div></div><div class="row"><div class="k">기술 스택</div><div class="v"><div class="stack"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span></div></div></div><div class="row"><div class="k">문제 해결</div><div class="v">지각 기준 변경 시 한 달 전부터 소급 적용해야 했습니다. 판정 로직과 해당 기간의 기록을 함께 수정하고, 검증 쿼리로 잘못 남거나 누락된 지각 기록이 없는지 대조했습니다.</div></div><div class="row"><div class="k">결과</div><div class="v">한 달간의 소급 적용 대상 기록을 새 기준에 맞게 정정하고 검증했습니다. 시스템은 실제 사내 업무에 사용됐습니다.</div></div></div></div></article>
+<article class="rise proj">
+      <div class="proj-head">
+        <div class="proj-top">
+          <span class="badge">개인 업무 자동화</span>
+          <h3>콘텐츠 수집·AI 대본 생성 자동화 도구 개발</h3>
+          <span class="period">2026.04 ~ 2026.05</span>
+        </div>
+        <p>콘텐츠 채널 운영에서 반복하던 소재 탐색과 대본 작성을 줄이기 위해 개발한 도구입니다. 소재 수집부터 AI 번역·대본 생성·업로드 예약까지 연결해 실제 채널 운영에 사용했습니다.</p>
+      </div>
+      <div class="proj-split"><div class="workflow" aria-label="콘텐츠 자동화 처리 흐름">
+<div class="workflow-label">구현한 처리 흐름</div>
+<ol><li><b>자료 수집</b><span>뉴스·유튜브·검색 트렌드</span></li><li><b>AI 번역</b><span>여러 건을 묶어 요청</span></li><li><b>대본 생성</b><span>수집한 자료를 LLM에 제공</span></li><li><b>업로드 예약</b><span>채널 운영에 활용</span></li></ol>
+<p class="fallback-note">번역 실패 시 원문을 제공해 소재 확인을 이어갑니다.</p>
+</div><div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v">콘텐츠 채널 운영에서 반복되는 작업을 파악하고, 자료 수집부터 번역·대본 생성·업로드 예약까지 단독으로 설계·개발했습니다.</div></div><div class="row"><div class="k">기술 스택</div><div class="v"><div class="stack"><span>Python</span><span>LLM API</span><span>외부 API 연동</span></div></div></div><div class="row"><div class="k">문제 해결</div><div class="v">뉴스·유튜브·검색 트렌드 등 여러 출처의 자료를 수집해 번역과 대본 생성에 연결했습니다. 번역 요청은 여러 건을 묶어 처리하고, 실패하면 원문을 제공해 소재 확인을 이어가도록 했습니다.</div></div><div class="row"><div class="k">결과</div><div class="v"><p>도구를 실제 채널 운영에 사용했으며, 소재 탐색과 대본 작성에 들던 시간을 약 3시간에서 약 30분으로 줄였습니다.</p><p class="project-note">당시 본인의 실제 작업 경험에 따른 대략적인 소요 시간입니다.</p></div></div></div></div></article>
 </div><!-- /track -->
     </div><!-- /carousel -->
 
@@ -492,25 +492,13 @@
   <div class="wrap">
     <div class="rise stag">HOW I WORK</div>
     <h2>개발 및 검증 방식
-      <span class="sub">반복되는 작업과 업무 규칙을 파악하고, 구현한 도구를 실제 업무에 사용하며 결과를 확인합니다.</span>
+      <span class="sub">업무 기준을 정리하고, AI와 코드를 연결해 구현한 뒤 실제 데이터로 결과를 확인합니다.</span>
     </h2>
     <div class="rise steps">
-      <div class="step">
-        <h4>반복 작업과 개선 대상 파악</h4>
-        <p>실제 작업 과정에서 반복되는 일과 시간이 많이 드는 부분을 확인합니다. 채용 서류 검토에서는 수백 건의 자기소개서에서 지침 위반 가능성을 찾는 작업을 자동화 대상으로 정했습니다.</p>
-      </div>
-      <div class="step">
-        <h4>업무 규칙과 적용 범위 확인</h4>
-        <p>기능을 구현하기 전에 처리 기준과 적용 대상을 정리합니다. 채용 서류 검증에서는 지침 10종과 AI의 탐지 범위, 담당자의 최종 판단 범위를 구분했습니다.</p>
-      </div>
-      <div class="step">
-        <h4>요청 방식과 실패 대응 설계</h4>
-        <p>외부 API를 반복 사용하는 작업에서는 요청 횟수와 실패 시 처리를 고려합니다. 번역 요청은 여러 건을 묶어 보내고, 실패하면 원문을 제공해 소재 확인을 이어갈 수 있도록 구현했습니다.</p>
-      </div>
-      <div class="step">
-        <h4>처리 결과와 실제 활용 확인</h4>
-        <p>채용 서류 검증 결과는 담당자가 확인할 수 있도록 라벨링해 Excel로 제공했습니다. 근태 기록은 검증 쿼리로 변경된 기준에 따른 판정 결과와 대조했습니다.</p>
-      </div>
+      <div class="step"><h4>업무 흐름과 완료 기준 정리</h4><p>사용자가 어떤 자료를 입력하고 어떤 결과를 확인해야 하는지부터 정리합니다. 반복되는 작업, 처리 기준, 사람이 판단해야 할 부분을 구분해 구현 범위를 정합니다.</p></div>
+      <div class="step"><h4>AI와 코드의 역할을 나누어 구현</h4><p>번역·분류·초안 생성에는 LLM API를 연결하고, 정해진 규칙에 따른 데이터 처리와 결과 저장은 코드로 구현합니다. 각 기능이 실제 작업 순서에 맞게 이어지도록 구성합니다.</p></div>
+      <div class="step"><h4>실패 상황에서도 작업을 이어가는 설계</h4><p>외부 API를 사용할 때는 요청 횟수와 실패 시 처리 방식을 함께 고려합니다. 여러 요청을 묶어 처리하거나 원문을 제공하는 등, 사용자가 다음 작업을 이어갈 수 있는 방법을 마련합니다.</p></div>
+      <div class="step"><h4>입력과 결과를 대조하며 검증</h4><p>화면 동작뿐 아니라 원본 데이터와 처리 결과가 업무 기준에 맞는지 확인합니다. 기준이 바뀌면 적용 대상과 기존 기록까지 점검하고, SQL 검증 쿼리 등으로 수정 결과를 대조합니다.</p></div>
     </div>
   </div>
 </section>
@@ -524,18 +512,18 @@
       <div class="gal-view"><div class="gal-track">
         <div class="gal-slide abil-card">
           <div class="n">01 / 03</div>
-          <h4>반복 업무 분석과 자동화 대상 선정</h4>
-          <p>채용 서류 검토와 콘텐츠 제작 과정에서 반복되는 작업을 분석해 자동화 대상으로 정했습니다. 실제 작업 과정을 파악하고, 자동화할 업무와 필요한 기능을 구체화하는 데 기여할 수 있습니다.</p>
+          <h4>업무 요구를 사용 가능한 기능으로 구현</h4>
+          <p>직원 9명이 사용하는 근태 관리 시스템에서 출퇴근·연차 관리 기능을 개발했습니다. 사용자의 작업과 업무 규칙을 이해하고, 화면과 데이터 처리가 연결된 기능으로 구체화할 수 있습니다.</p>
         </div>
         <div class="gal-slide abil-card">
           <div class="n">02 / 03</div>
-          <h4>AI를 활용한 검토·처리 과정 자동화</h4>
-          <p>LLM API로 자기소개서의 검토 대상을 탐지하고, 항목별 라벨이 포함된 결과를 Excel로 제공했습니다. AI 분석부터 담당자의 확인까지 이어지는 업무 흐름을 구현할 수 있습니다.</p>
+          <h4>LLM과 외부 API를 연결한 업무 자동화</h4>
+          <p>자료 수집부터 번역·대본 생성·업로드 예약까지 연결한 도구를 직접 운영했습니다. 개별 AI 기능을 실제 작업 순서에 맞게 연결하고, 사람이 반복하는 단계를 줄이는 자동화 흐름을 구현할 수 있습니다.</p>
         </div>
         <div class="gal-slide abil-card">
           <div class="n">03 / 03</div>
-          <h4>업무 규칙 반영과 데이터 검증</h4>
-          <p>근태 관리 시스템에서 변경된 판정 기준에 맞춰 로직과 기존 기록을 수정하고, 검증 쿼리로 결과를 확인했습니다. 업무 규칙과 적용 범위를 기능에 반영하고 처리 결과를 검증하는 데 기여할 수 있습니다.</p>
+          <h4>기준 변경에 대응하는 데이터 수정과 검증</h4>
+          <p>근태 판정 기준이 바뀌었을 때 기존 기록을 새 기준에 맞추는 SQL을 작성하고, 누락이나 잘못된 판정이 없는지 확인했습니다. 기능 수정과 함께 기존 데이터에 미치는 영향까지 점검하는 역량을 갖췄습니다.</p>
         </div>
       </div></div>
       <div class="gal-ctrl">
