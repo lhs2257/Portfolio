@@ -426,7 +426,22 @@ nav .wrap>a{display:none;width:100%;padding:12px 0}nav.open .wrap>a{display:bloc
 #project-3 .project-points li{margin-bottom:5px}
 @media(max-width:760px){.hero{grid-template-columns:1fr;gap:22px}.photo{width:180px;height:180px}.intro-principles{margin:18px 0 22px}}
 @media print{.photo{width:160px;height:160px}.hero{grid-template-columns:1fr 160px}}
-header .primary-link{margin:24px 0 0}</style>
+header .primary-link{margin:24px 0 0}
+/* Horizontal development flow */
+#how .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;counter-reset:s;margin-top:28px}
+#how .step,#how .step:last-child{position:relative;margin:0;padding:66px 22px 24px;border:1px solid var(--line);border-radius:14px;background:var(--bg-soft);min-width:0}
+#how .step::before{counter-increment:s;content:"0" counter(s);position:absolute;left:22px;top:20px;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:var(--accent);color:white;font-size:12px;font-weight:700}
+#how .step:not(:last-child)::after{content:"→";position:absolute;right:-23px;top:27px;width:22px;text-align:center;color:var(--accent);font-size:18px;font-weight:600}
+#how .step h4{font-size:16px;line-height:1.55;margin:0 0 14px}
+#how .step .copy-points{font-size:13px;padding-left:16px;line-height:1.8}
+@media(max-width:1050px) and (min-width:701px){#how .steps{grid-template-columns:repeat(2,minmax(0,1fr))}#how .step:nth-child(2)::after{display:none}}
+@media(max-width:700px){#how .steps{grid-template-columns:1fr;gap:22px}#how .step,#how .step:last-child{padding:22px 20px 22px 64px}#how .step::before{left:18px;top:22px}#how .step:not(:last-child)::after{content:"↓";top:auto;bottom:-23px;right:auto;left:24px;height:22px}#how .step h4{margin-bottom:10px}}
+/* Reveal each section once; content stays visible without JavaScript */
+section.reveal-ready>.wrap,section.reveal-ready>.wrap.wide{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.25,1)}
+section.reveal-ready.reveal-visible>.wrap{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){section.reveal-ready>.wrap{opacity:1;transform:none;transition:none}}
+@media print{section.reveal-ready>.wrap{opacity:1!important;transform:none!important;transition:none!important}#how .steps{grid-template-columns:repeat(2,minmax(0,1fr))}#how .step::after{display:none}#how .step{break-inside:avoid}}
+</style>
 </head>
 <body>
 
@@ -605,5 +620,5 @@ const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('na
 window.addEventListener('beforeprint',()=>{printing=true;panels.forEach(p=>p.inert=false)});window.addEventListener('afterprint',()=>{printing=false;go(current,false)});
 })();</script>
 
-</body>
+<script>(()=>{const reduced=matchMedia('(prefers-reduced-motion: reduce)');if(reduced.matches||!('IntersectionObserver' in window))return;const sections=[...document.querySelectorAll('section')];const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('reveal-visible');observer.unobserve(entry.target)}})},{threshold:0,rootMargin:'0px 0px -55px 0px'});sections.forEach(section=>{section.classList.add('reveal-ready');observer.observe(section)});reduced.addEventListener('change',e=>{if(e.matches){sections.forEach(s=>s.classList.add('reveal-visible'));observer.disconnect()}})})();</script></body>
 </html>
