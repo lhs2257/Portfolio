@@ -344,7 +344,7 @@
 header{background:linear-gradient(135deg,#f5f8ff 0%,#fff 68%);padding:78px 0 64px}
 header h1{font-size:clamp(30px,3.5vw,46px);line-height:1.35;letter-spacing:-1.5px;word-break:keep-all}
 .hero{grid-template-columns:minmax(0,1fr) 230px}.photo{width:220px;height:250px;border-radius:24px}
-.projbar{display:block;position:static}.tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;width:100%}
+.projbar{display:block;position:static}.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:100%}
 .tabs button{white-space:normal;text-align:left;padding:16px 12px;border-radius:12px;min-width:0;line-height:1.45;display:flex;flex-direction:column;gap:6px}
 .tabs small{font-size:11px;font-weight:400}.tab-number{font-size:11px;opacity:.75}.tabs b{font-size:14px}.ctrl{justify-content:flex-end;margin:14px 0}
 .track{display:block!important;transform:none!important}.proj[hidden],.gal-slide[hidden]{display:none!important}.carousel{height:auto!important;overflow:visible}
@@ -466,7 +466,7 @@ nav .wrap>a:first-of-type{margin-top:10px}}
     <button class="menu-toggle" type="button" aria-expanded="false" aria-label="목차 열기">목차</button><a href="#intro">소개</a><a href="#work">핵심 프로젝트</a>
     <a href="#how">작업 방식</a>
     <a href="#ability">역량</a>
-    <a href="#more">추가 프로젝트</a>
+    <a href="#more">그 외 프로젝트</a>
     <a href="#end">마무리</a>
   </div>
 </nav>
@@ -496,15 +496,33 @@ nav .wrap>a:first-of-type{margin-top:10px}}
   <div class="wrap wide">
     <div class="rise stag">SELECTED WORK</div>
     <h2>핵심 프로젝트
-      <span class="sub">서비스 출시, 웹 개발, 현업 자동화와 AI 구현을 담은 다섯 프로젝트입니다.</span>
+      <span class="sub">고객 업무를 지원한 납품, 개인 서비스 출시, 팀 개발과 AI 설계를 보여 주는 세 프로젝트입니다.</span>
     </h2>
 
     <div class="projbar">
-      <div class="tabs" id="tabs" role="tablist" aria-label="핵심 프로젝트 선택"><button type="button" role="tab" id="tab-0" aria-controls="project-0" aria-selected="true"><span class="tab-number">01</span><b>디지털 명함</b><small>서비스 출시 · 오류 해결</small></button><button type="button" role="tab" id="tab-1" aria-controls="project-1" aria-selected="false"><span class="tab-number">02</span><b>외주 매칭 플랫폼</b><small>풀스택 · 계산 검증</small></button><button type="button" role="tab" id="tab-2" aria-controls="project-2" aria-selected="false"><span class="tab-number">03</span><b>근태 관리 시스템</b><small>현업 요구 · 데이터 관리</small></button><button type="button" role="tab" id="tab-3" aria-controls="project-3" aria-selected="false"><span class="tab-number">04</span><b>AI 면접 연습</b><small>RAG · 음성 연동</small></button><button type="button" role="tab" id="tab-4" aria-controls="project-4" aria-selected="false"><span class="tab-number">05</span><b>채용 서류 검토</b><small>업무 자동화 · AI 연동</small></button></div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="핵심 프로젝트 선택"><button type="button" role="tab" id="tab-0" aria-controls="project-0" aria-selected="true"><span class="tab-number">01</span><b>채용 서류 검토</b><small>실제 납품 · 업무 자동화</small></button><button type="button" role="tab" id="tab-1" aria-controls="project-1" aria-selected="false"><span class="tab-number">02</span><b>디지털 명함</b><small>단독 출시 · 오류 해결</small></button><button type="button" role="tab" id="tab-2" aria-controls="project-2" aria-selected="false"><span class="tab-number">03</span><b>AI 견적</b><small>팀 개발 · 계산 검증</small></button></div>
       </div>
 
     <div class="carousel" id="carousel">
       <div class="track" id="track"><article class="rise proj" id="project-0" role="tabpanel" aria-labelledby="tab-0">
+      <div class="proj-head">
+        <div class="proj-top">
+          <span class="badge">외주 납품 · 5인 팀 프로젝트</span>
+          <h3>AI 기반 채용 서류 검토 지원 프로그램</h3>
+          <span class="period">2026.01 ~ 2026.03</span>
+        </div>
+        <p>공공기관 채용 서류의 블라인드 위반·불성실 작성 의심 항목 탐지 및 담당자 검토 지원</p>
+      </div>
+      <div class="proj-split">
+      <div class="gal" data-gal>
+        <div class="gal-view"><div class="gal-track">
+          <figure class="gal-slide"><img src="unified/assets/691952b4a58ed1e0.png" alt="채용 서류 검증 결과"><figcaption>항목별 탐지 결과 확인 및 Excel 다운로드</figcaption></figure>
+          <figure class="gal-slide"><img src="unified/assets/dbfca0ca0860d01f.png" alt="채용 공고 관리"><figcaption>기관·공고별 서류 검토 업무 관리</figcaption></figure>
+          <figure class="gal-slide"><img src="unified/assets/315b76f0c9ad0d74.png" alt="검증 지침 설정"><figcaption>공고별 검증 지침 10종과 대상 문서 확인</figcaption></figure>
+        </div></div>
+        <div class="gallery-progress" aria-label="이미지 선택"></div>
+      </div>
+      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>5인 팀에서 Gemini Flash API 연동과 검증 지침 관리 담당</li><li>자기소개서 일괄 처리 및 Excel 결과 생성 기능 구현</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>React · TypeScript · Supabase · Gemini Flash</li></ul></div></div><div class="row"><div class="k">설계 과제</div><div class="v"><ul class="project-points"><li>공고·기관마다 다른 블라인드 위반 및 불성실 작성 기준 반영</li><li>담당자가 AI 탐지 근거를 확인하고 최종 판단할 수 있는 처리 방식 필요</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>검증 지침 10종의 활성화 여부와 내용을 관리하는 기능 구현</li><li>AI는 의심 문장과 근거를 제시하고, 최종 판단은 담당자가 수행하도록 역할 구분</li></ul></div></div><div class="row"><div class="k">결과</div><div class="v"><ul class="project-points"><li>채용 대행사에 납품되어 채용 공고의 서류 검토에 사용</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article><article class="rise proj" id="project-1" role="tabpanel" aria-labelledby="tab-1">
       <div class="proj-head">
         <div class="proj-top">
           <span class="badge">운영 중</span>
@@ -524,8 +542,7 @@ nav .wrap>a:first-of-type{margin-top:10px}}
         </div></div>
         <div class="gallery-progress" aria-label="이미지 선택"></div>
       </div>
-      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>기획·디자인부터 개발·테스트·배포까지 단독 수행</li><li>명함 정보 추출, 이미지 전처리와 보관 기능 구현</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>Python · FastAPI · GPT-4o-mini</li><li>Docker · Railway로 서버 배포</li></ul></div></div><div class="row"><div class="k">문제</div><div class="v"><ul class="project-points"><li>iOS 이미지 방향 정보 유실과 경계 검출 실패로 명함 인식 오류 발생</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>방향 보정을 경계 검출보다 먼저 수행하도록 처리 순서 변경</li><li>자동 경계 검출 실패 시 네 꼭짓점을 직접 지정하는 방식 제공</li><li>이미지 보정 실패 시 원본으로 인식을 이어가는 대체 경로 구현</li></ul></div></div><div class="row"><div class="k">검증·결과</div><div class="v"><ul class="project-points"><li>iOS·안드로이드에서 동작 확인 후 토스 미니앱 출시</li><li>배포 첫 달 66명 이용</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article>
-<article class="rise proj" id="project-1" role="tabpanel" aria-labelledby="tab-1">
+      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>기획·디자인부터 개발·테스트·배포까지 단독 수행</li><li>명함 정보 추출, 이미지 전처리와 보관 기능 구현</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>Python · FastAPI · GPT-4o-mini</li><li>Docker · Railway로 서버 배포</li></ul></div></div><div class="row"><div class="k">문제</div><div class="v"><ul class="project-points"><li>iOS 이미지 방향 정보 유실과 경계 검출 실패로 명함 인식 오류 발생</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>방향 보정을 경계 검출보다 먼저 수행하도록 처리 순서 변경</li><li>자동 경계 검출 실패 시 네 꼭짓점을 직접 지정하는 방식 제공</li><li>이미지 보정 실패 시 원본으로 인식을 이어가는 대체 경로 구현</li></ul></div></div><div class="row"><div class="k">검증·결과</div><div class="v"><ul class="project-points"><li>iOS·안드로이드에서 동작 확인 후 토스 미니앱 출시</li><li>배포 첫 달 66명 이용</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article><article class="rise proj" id="project-2" role="tabpanel" aria-labelledby="tab-2">
       <div class="proj-head">
         <div class="proj-top">
           <span class="badge">팀 프로젝트 · 6인 · 실서비스 배포</span>
@@ -544,47 +561,7 @@ nav .wrap>a:first-of-type{margin-top:10px}}
         </div></div>
         <div class="gallery-progress" aria-label="이미지 선택"></div>
       </div>
-      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>6인 팀에서 견적 기능의 기획·디자인·개발 담당</li><li>입력·결과 화면과 서버의 분석·계산 로직 구현</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>React · TypeScript · Node.js · Express</li><li>PostgreSQL · Prisma · OpenAI API</li></ul></div></div><div class="row"><div class="k">문제</div><div class="v"><ul class="project-points"><li>AI가 기능별 비용과 총액을 각각 생성해 합계 불일치 발생</li><li>견적 결과가 프로젝트 등록 예산에 연결되어 계산 오류가 등록 정보에도 영향</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>AI는 필요한 기능·예상 기간·난도 추정에 활용</li><li>서버에서 정해진 규칙으로 항목별 비용을 계산하고 총액 합산</li></ul></div></div><div class="row"><div class="k">검증·결과</div><div class="v"><ul class="project-points"><li>금액 불일치 해결 후 회귀 테스트 21건 추가</li><li>계산 결과 검증 후 서비스 배포</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article>
-<article class="rise proj" id="project-2" role="tabpanel" aria-labelledby="tab-2">
-      <div class="proj-head">
-        <div class="proj-top">
-          <span class="badge">실무 · 팀 프로젝트</span>
-          <h3>사내 근태 관리 시스템 개발</h3>
-          <span class="period">2025.11 ~ 2026.03 · 5개월간</span>
-        </div>
-        <p>엑셀로 수기 관리하던 출퇴근·연차 등의 업무를 웹 시스템으로 구현한 프로젝트입니다. 임직원 아홉 명이 사용하는 시스템으로, 프로젝트 개발에 참여했습니다.</p>
-      </div>
-      <div class="proj-split">
-      <div class="gal" data-gal>
-        <div class="gal-view"><div class="gal-track">
-          <figure class="gal-slide"><img src="unified/assets/39e649e20ad00ee2.jpg" alt="근태 통계"><figcaption>날짜별 근태 현황 확인 · 주말 집계 제외</figcaption></figure>
-          <figure class="gal-slide"><img src="unified/assets/f199328954d3ace3.jpg" alt="대시보드"><figcaption>출퇴근 기록·팀원 근무 현황·당일 일정 확인</figcaption></figure>
-          <figure class="gal-slide"><img src="unified/assets/df23b6e2ed80867b.jpg" alt="모바일 대시보드"><figcaption>모바일 출퇴근 기록·근무 현황 확인</figcaption></figure>
-          <figure class="gal-slide"><img src="unified/assets/b23d025e25f0aef5.jpg" alt="모바일 캘린더"><figcaption>날짜별 사내 일정 조회</figcaption></figure>
-        </div></div>
-        <div class="gallery-progress" aria-label="이미지 선택"></div>
-      </div>
-      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>사내 9명이 사용하는 2인 개발 프로젝트 참여</li><li>출퇴근·연차 관리 화면, 근태 판정 로직과 기록 수정·검증 담당</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>Next.js · TypeScript · Supabase · PostgreSQL</li></ul></div></div><div class="row"><div class="k">문제</div><div class="v"><ul class="project-points"><li>변경된 업무 시간 기준을 과거 기록에 일괄 적용해 지각 판정이 달라지는 문제 발생</li><li>출근 기록 없는 지각 기록과 휴가·지각 중복 기록 확인</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>출근 날짜에 따라 변경 전후 기준을 구분하도록 판정 함수 수정</li><li>SQL로 출근·휴가·지각 기록을 대조해 오류와 누락 정리</li></ul></div></div><div class="row"><div class="k">검증·결과</div><div class="v"><ul class="project-points"><li>잘못 생성된 기록뿐 아니라 누락된 기록도 조회해 수정 결과 검증</li><li>업무 기준의 적용 시점과 기존 데이터에 미치는 영향을 함께 확인하는 방법 습득</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article>
-<article class="rise proj" id="project-3" role="tabpanel" aria-labelledby="tab-3"><div class="proj-head"><div class="proj-top"><span class="badge">개인 프로젝트 · 해커톤 출품</span><h3>이력서 검색 기반 AI 면접 연습 서비스</h3><span class="period">2026.01 ~ 2026.02</span></div><p>이력서 기반 질문 생성과 음성 답변·후속 질문을 제공하는 면접 연습 서비스</p></div><div class="proj-split"><div class="flow-panel"><div class="stag">SERVICE FLOW</div><h4>이력서 검색 → 맞춤 면접</h4><ol><li><b>01 · 이력서 등록</b><span>일정 길이로 텍스트 분할</span></li><li><b>02 · 임베딩 및 검색</b><span>현재 대화와 관련된 경험 검색</span></li><li><b>03 · 맞춤 질문 생성</b><span>검색한 내용을 LLM에 전달</span></li><li><b>04 · 음성 답변과 후속 질문</b><span>Whisper로 답변을 텍스트로 변환</span></li></ol><p>이력서 입력부터 후속 질문까지의 구현 흐름</p></div><div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>해커톤 기획·디자인·개발 단독 수행</li><li>이력서 검색, 질문 생성과 음성 답변 기능 연결</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>Next.js · LangChain · OpenAI API · Whisper</li></ul></div></div><div class="row"><div class="k">설계 과제</div><div class="v"><ul class="project-points"><li>대화 맥락에 맞는 이력서 내용을 모델에 제공할 필요</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>이력서를 일정 길이로 분할하고 임베딩으로 변환해 저장</li><li>대화와 관련된 내용을 검색해 질문 생성에 전달하는 RAG 구현</li><li>음성 답변을 Whisper로 텍스트 변환해 후속 질문 생성에 연결</li></ul></div></div><div class="row"><div class="k">결과·배운 점</div><div class="v"><ul class="project-points"><li>면접 연습이 가능한 서비스로 완성해 해커톤 출품</li><li>질문 생성과 정보 검색을 함께 설계하는 방법 습득</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article>
-<article class="rise proj" id="project-4" role="tabpanel" aria-labelledby="tab-4">
-      <div class="proj-head">
-        <div class="proj-top">
-          <span class="badge">외주 납품 · 5인 팀 프로젝트</span>
-          <h3>AI 기반 채용 서류 검토 지원 프로그램</h3>
-          <span class="period">2026.01 ~ 2026.03</span>
-        </div>
-        <p>공공기관 채용 서류의 블라인드 위반·불성실 작성 의심 항목 탐지 및 담당자 검토 지원</p>
-      </div>
-      <div class="proj-split">
-      <div class="gal" data-gal>
-        <div class="gal-view"><div class="gal-track">
-          <figure class="gal-slide"><img src="unified/assets/691952b4a58ed1e0.png" alt="채용 서류 검증 결과"><figcaption>항목별 탐지 결과 확인 및 Excel 다운로드</figcaption></figure>
-          <figure class="gal-slide"><img src="unified/assets/dbfca0ca0860d01f.png" alt="채용 공고 관리"><figcaption>기관·공고별 서류 검토 업무 관리</figcaption></figure>
-          <figure class="gal-slide"><img src="unified/assets/315b76f0c9ad0d74.png" alt="검증 지침 설정"><figcaption>공고별 검증 지침 10종과 대상 문서 확인</figcaption></figure>
-        </div></div>
-        <div class="gallery-progress" aria-label="이미지 선택"></div>
-      </div>
-      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>5인 팀에서 Gemini Flash API 연동과 검증 지침 관리 담당</li><li>자기소개서 일괄 처리 및 Excel 결과 생성 기능 구현</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>React · TypeScript · Supabase · Gemini Flash</li></ul></div></div><div class="row"><div class="k">설계 과제</div><div class="v"><ul class="project-points"><li>공고·기관마다 다른 블라인드 위반 및 불성실 작성 기준 반영</li><li>담당자가 AI 탐지 근거를 확인하고 최종 판단할 수 있는 처리 방식 필요</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>검증 지침 10종의 활성화 여부와 내용을 관리하는 기능 구현</li><li>AI는 의심 문장과 근거를 제시하고, 최종 판단은 담당자가 수행하도록 역할 구분</li></ul></div></div><div class="row"><div class="k">결과</div><div class="v"><ul class="project-points"><li>채용 대행사에 납품되어 채용 공고의 서류 검토에 사용</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article></div><!-- /track -->
+      <div class="proj-body"><div class="row"><div class="k">담당 역할</div><div class="v"><ul class="project-points"><li>6인 팀에서 견적 기능의 기획·디자인·개발 담당</li><li>입력·결과 화면과 서버의 분석·계산 로직 구현</li></ul></div></div><div class="row"><div class="k">기술 스택</div><div class="v"><ul class="project-points"><li>React · TypeScript · Node.js · Express</li><li>PostgreSQL · Prisma · OpenAI API</li></ul></div></div><div class="row"><div class="k">문제</div><div class="v"><ul class="project-points"><li>AI가 기능별 비용과 총액을 각각 생성해 합계 불일치 발생</li><li>견적 결과가 프로젝트 등록 예산에 연결되어 계산 오류가 등록 정보에도 영향</li></ul></div></div><div class="row"><div class="k">판단과 구현</div><div class="v"><ul class="project-points"><li>AI는 필요한 기능·예상 기간·난도 추정에 활용</li><li>서버에서 정해진 규칙으로 항목별 비용을 계산하고 총액 합산</li></ul></div></div><div class="row"><div class="k">검증·결과</div><div class="v"><ul class="project-points"><li>금액 불일치 해결 후 회귀 테스트 21건 추가</li><li>계산 결과 검증 후 서비스 배포</li></ul></div></div></div></div><div class="project-return"><a href="#work">프로젝트 목록으로 ↑</a></div></article></div><!-- /track -->
     </div><!-- /carousel -->
 
 
@@ -598,7 +575,7 @@ nav .wrap>a:first-of-type{margin-top:10px}}
 <section id="ability"><div class="wrap"><div class="stag">WHAT I BRING</div><h2>기여할 수 있는 역량</h2><div class="ability-grid"><article class="ability-item"><span class="eyebrow">01</span><h3>웹 기능 구현</h3><ul class="copy-points"><li>외주 매칭 플랫폼의 입력 화면·서버 계산·데이터 저장 구현</li><li>화면 요구사항과 서버 처리 조건을 함께 고려한 기능 개발</li></ul></article><article class="ability-item"><span class="eyebrow">02</span><h3>AI를 활용한 업무 개선</h3><ul class="copy-points"><li>채용 검토 기준을 AI 분석에 반영하고 이력서 검색을 질문 생성에 연결</li><li>사용 목적에 맞는 정보와 처리 흐름 설계</li></ul></article><article class="ability-item"><span class="eyebrow">03</span><h3>서비스 검증과 운영 개선</h3><ul class="copy-points"><li>명함 인식 오류 해결과 근태 기록의 오류·누락 검증</li><li>이용 환경과 업무 기준을 확인해 수정 후 결과 검증</li></ul></article></div></div></section>
 
 <!-- ============ 그 외 ============ -->
-<section id="more"><div class="wrap"><div class="stag">OTHER WORK</div><h2>추가 프로젝트</h2><div class="featured-grid"><article class="extra-card"><h3>콘텐츠 수집·AI 대본 생성 도구</h3><ul class="copy-points"><li>다섯 출처의 콘텐츠 소재 수집</li><li>AI 번역·대본 생성·업로드 예약을 연결해 채널 운영에 활용</li></ul><span class="mini-meta">Python · 2026.04 ~ 05</span></article><article class="extra-card"><h3>아동 그림 기반 심리검사 앱</h3><ul class="copy-points"><li>팀원들과 객체 탐지 모델 학습 분담</li><li>분석 결과 확인을 위한 앱 개발과 서버 연동 담당</li></ul><span class="mini-meta">Flutter · YOLOv8 · 캡스톤 · 2025.09 ~ 12</span></article><article class="extra-card"><h3>위스키 테이스팅 노트 공유 서비스</h3><ul class="copy-points"><li>화면·서버·DB 연동</li><li>인증 기능 구현 및 서비스 배포</li></ul><span class="mini-meta">React · Node.js · 2026.04 ~ 06</span></article></div><div class="more-motion-head"><p>그 외 프로젝트</p><button class="motion-toggle" type="button" aria-pressed="false" aria-label="자동 이동 일시정지" title="일시정지"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg></button></div><div class="marquee" tabindex="0" aria-label="추가 개발 경험. 마우스를 올리거나 선택하면 자동 이동이 멈춥니다."><div class="marquee-track"><div class="marquee-group"><article class="mini-card"><h3>영단어 게임 · 간편 정산 앱</h3><ul class="copy-points"><li>개인 개발 챌린지 참여</li><li>영단어 게임·총무용 정산 앱 개발 및 배포</li></ul><span class="mini-meta">개인 개발 챌린지 · 2026.03 ~ 06</span></article><article class="mini-card"><h3>숏폼 소개 상품 모음 웹</h3><ul class="copy-points"><li>수집한 상품 정보를 조회하는 반응형 웹 구현</li></ul><span class="mini-meta">Next.js · 2026</span></article><article class="mini-card"><h3>기업 웹사이트 개선 기획·디자인</h3><ul class="copy-points"><li>4인 팀장으로 웹사이트 개선안 기획·디자인</li><li>개선안 발표</li></ul><span class="mini-meta">Figma · 코드잇 실무 프로젝트 · 2026</span></article><article class="mini-card"><h3>관광데이터 활용 앱 공모전</h3><ul class="copy-points"><li>공공 API 응답을 기기에 저장</li><li>API 장애 시 저장된 정보를 조회하는 기능 구현</li></ul><span class="mini-meta">Kotlin · 2025</span></article><article class="mini-card"><h3>병사 휴가 관리 시스템</h3><ul class="copy-points"><li>프로그램 설치 제한 환경에서 Excel 매크로 활용</li><li>잔여 휴가 계산 자동화 및 전 부대원 사용</li></ul><span class="mini-meta">Excel Macro · 2021 ~ 2022 (군 복무 중)</span></article></div></div></div></div></section>
+<section id="more"><div class="wrap"><div class="stag">OTHER WORK</div><h2>그 외 프로젝트</h2><div class="featured-grid"><article class="extra-card" id="interview"><h3>이력서 검색 기반 AI 면접 연습</h3><ul class="copy-points"><li>이력서 분할·임베딩·벡터 검색을 질문 생성에 연결한 RAG 구현</li><li>음성 답변과 후속 질문이 이어지는 서비스로 완성해 해커톤 출품</li></ul><span class="mini-meta">Next.js · LangChain · OpenAI API · Whisper · 2026.01 ~ 02</span></article><article class="extra-card" id="attendance"><h3>사내 근태 관리 시스템</h3><ul class="copy-points"><li>임직원 9명이 사용하는 2인 개발 프로젝트에서 출퇴근·연차 관리 기능 담당</li><li>정책 적용 시점에 따라 판정 로직을 수정하고, SQL로 기록의 오류·누락 검증</li></ul><span class="mini-meta">Next.js · TypeScript · Supabase · PostgreSQL · 2025.11 ~ 2026.03</span></article><article class="extra-card"><h3>콘텐츠 수집·AI 대본 생성 도구</h3><ul class="copy-points"><li>다섯 출처의 콘텐츠 소재 수집</li><li>AI 번역·대본 생성·업로드 예약을 연결해 채널 운영에 활용</li></ul><span class="mini-meta">Python · 2026.04 ~ 05</span></article></div><div class="more-motion-head"><p>추가 개발 경험</p><button class="motion-toggle" type="button" aria-pressed="false" aria-label="자동 이동 일시정지" title="일시정지"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg></button></div><div class="marquee" tabindex="0" aria-label="추가 개발 경험. 마우스를 올리거나 선택하면 자동 이동이 멈춥니다."><div class="marquee-track"><div class="marquee-group"><article class="mini-card"><h3>아동 그림 기반 심리검사 앱</h3><ul class="copy-points"><li>팀원들과 객체 탐지 모델 학습 분담</li><li>분석 결과 확인을 위한 앱 개발과 서버 연동 담당</li></ul><span class="mini-meta">Flutter · YOLOv8 · 캡스톤 · 2025.09 ~ 12</span></article><article class="mini-card"><h3>위스키 테이스팅 노트 공유 서비스</h3><ul class="copy-points"><li>화면·서버·DB 연동</li><li>인증 기능 구현 및 서비스 배포</li></ul><span class="mini-meta">React · Node.js · 2026.04 ~ 06</span></article><article class="mini-card"><h3>영단어 게임 · 간편 정산 앱</h3><ul class="copy-points"><li>개인 개발 챌린지 참여</li><li>영단어 게임·총무용 정산 앱 개발 및 배포</li></ul><span class="mini-meta">개인 개발 챌린지 · 2026.03 ~ 06</span></article><article class="mini-card"><h3>숏폼 소개 상품 모음 웹</h3><ul class="copy-points"><li>수집한 상품 정보를 조회하는 반응형 웹 구현</li></ul><span class="mini-meta">Next.js · 2026</span></article><article class="mini-card"><h3>기업 웹사이트 개선 기획·디자인</h3><ul class="copy-points"><li>4인 팀장으로 웹사이트 개선안 기획·디자인</li><li>개선안 발표</li></ul><span class="mini-meta">Figma · 코드잇 실무 프로젝트 · 2026</span></article><article class="mini-card"><h3>관광데이터 활용 앱 공모전</h3><ul class="copy-points"><li>공공 API 응답을 기기에 저장</li><li>API 장애 시 저장된 정보를 조회하는 기능 구현</li></ul><span class="mini-meta">Kotlin · 2025</span></article><article class="mini-card"><h3>병사 휴가 관리 시스템</h3><ul class="copy-points"><li>프로그램 설치 제한 환경에서 Excel 매크로 활용</li><li>잔여 휴가 계산 자동화 및 전 부대원 사용</li></ul><span class="mini-meta">Excel Macro · 2021 ~ 2022 (군 복무 중)</span></article></div></div></div></div></section>
 
 <!-- ============ 마무리 ============ -->
 <section id="end"><div class="wrap"><div class="stag">CLOSING</div><h2>마무리</h2><div class="close"><p>사용자의 불편을 이해하고, 믿고 이용할 수 있는 서비스로 완성하는 개발자 이호섭입니다.</p><ul class="copy-points"><li>사용 목적에 맞는 기능 구현과 결과 검증</li><li>새로운 기술의 실제 적용과 지속적인 서비스 개선</li></ul></div></div></section>
@@ -612,7 +589,7 @@ nav .wrap>a:first-of-type{margin-top:10px}}
 <script>(()=>{
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const panels=[...document.querySelectorAll('#track>.proj')],tabs=[...document.querySelectorAll('#tabs button')];
-let current=0,printing=false;const slugs=['cardy','estimate','attendance','interview','recruitment'];
+let current=0,printing=false;const slugs=['recruitment','cardy','estimate'];
 function go(n,update=true){current=Math.max(0,Math.min(panels.length-1,n));panels.forEach((p,i)=>{p.hidden=i!==current;p.inert=i!==current});tabs.forEach((t,i)=>{t.setAttribute('aria-selected',i===current);t.tabIndex=i===current?0:-1});if(update)history.replaceState(null,'','#'+slugs[current])}
 tabs.forEach((t,i)=>{t.onclick=()=>go(i);t.onkeydown=e=>{let n=i;if(e.key==='ArrowRight'||e.key==='ArrowDown')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();go(n);tabs[n].focus()}});
 function fromHash(){let n=slugs.indexOf(location.hash.slice(1));if(n>=0){go(n,false);document.querySelector('#work').scrollIntoView()}else go(current,false)}fromHash();window.addEventListener('hashchange',fromHash);
@@ -629,7 +606,7 @@ setInterval(()=>{if(!paused()&&!g.closest('.proj').hidden)show(j+1)},5500);show(
 const lb=document.querySelector('#lb'),img=lb.querySelector('img'),close=lb.querySelector('button');let trigger=null;lb.setAttribute('role','dialog');lb.setAttribute('aria-label','프로젝트 이미지 확대');lb.setAttribute('aria-modal','true');
 function hide(){lb.classList.remove('on');if(trigger)trigger.focus()}close.onclick=hide;lb.onclick=e=>{if(e.target===lb)hide()};document.addEventListener('keydown',e=>{if(e.key==='Escape')hide();if(lb.classList.contains('on')&&e.key==='Tab'){e.preventDefault();close.focus()}});
 document.querySelectorAll('.gal-slide img').forEach(el=>{el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-label',el.alt+' 확대');const open=()=>{trigger=el;img.src=el.src;img.alt=el.alt;lb.classList.add('on');close.focus()};el.onclick=open;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}}});
-const marquee=document.querySelector('.marquee'),group=marquee.querySelector('.marquee-group'),copy=group.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.inert=true;marquee.querySelector('.marquee-track').appendChild(copy);
+const marquee=document.querySelector('.marquee'),group=marquee.querySelector('.marquee-group'),copy=group.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));copy.inert=true;marquee.querySelector('.marquee-track').appendChild(copy);
 const toggle=document.querySelector('.motion-toggle');toggle.onclick=()=>{const stop=marquee.classList.toggle('paused');toggle.setAttribute('aria-pressed',stop);toggle.innerHTML=stop?'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>':'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>';toggle.setAttribute('aria-label',stop?'자동 이동 재생':'자동 이동 일시정지');toggle.title=stop?'재생':'일시정지'};
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('nav');menu.onclick=()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'목차 닫기':'목차 열기')};nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
 window.addEventListener('beforeprint',()=>{printing=true;panels.forEach(p=>p.inert=false)});window.addEventListener('afterprint',()=>{printing=false;go(current,false)});
